@@ -14,7 +14,11 @@
 
 .img{
   width: 400px;
-  aspect-ratio: 16/9;}
+  aspect-ratio: 16/9;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 
 .footer {
   display: flex;
@@ -76,7 +80,7 @@
 
 .card {
   margin: 1rem;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   text-align: left;
   color: inherit;
   text-decoration: none;
@@ -106,6 +110,20 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+#Name{
+  font-size: 23px ;
+  display: inline-block;
+}
+#Prix{
+  font-size: 17px ;
+  display: inline-block;
+  margin-left: 29%;
+
+}
+#Adresse{
+  font-size: 13px ;
 }
 
 @media (max-width: 600px) {
