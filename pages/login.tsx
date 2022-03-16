@@ -28,7 +28,6 @@ function LoginPage() {
                 <label htmlFor="password">Mot de passe</label>
                 <input type="password" name='password' placeholder='Mot de passe' onChange={handlePassword} value={password} />
             </div>
-            {/* <button className={styles.button}>Connecter</button> */}
             <Button text="Se connecter" action={login} width={"150px"} height={"30px"}></Button>
         </div>
     </div>
