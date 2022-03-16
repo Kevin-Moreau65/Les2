@@ -19,8 +19,10 @@ export interface Props {
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <img className={styles.img} src={props.photo}></img>
-            <h2 id={styles.Name}> {props.name}</h2>
-            <span><h2 id={styles.Prix}>{new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'USD' }).format(props.prix)}</h2></span>
+            <div id={styles.divVilla}>
+              <h2 id={styles.Name}> {props.name}</h2>
+              <h2 id={styles.Prix}>{new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'USD' }).format(props.prix)}</h2>
+            </div>
             <h2 id={styles.Adresse}>{props.adresse}</h2>            
           </a>
         </div>
