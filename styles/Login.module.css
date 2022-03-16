@@ -32,7 +32,19 @@
 }
 
 .champs {
+    font-size: large;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.champs input {
+    font-size: large;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: solid black 2px;
+}
+
+.champs input:focus-visible {
+    outline: none;
 }
