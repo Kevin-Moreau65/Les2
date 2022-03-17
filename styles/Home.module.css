@@ -12,13 +12,17 @@
   align-items: center;
 }
 
-.img{
+.img {
   width: 400px;
   aspect-ratio: 16/9;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: all 1s;
 }
 
+.card:hover .img {
+  transform: scale3d(1.06, 1.06, 1.06);
+}
 
 .footer {
   display: flex;
