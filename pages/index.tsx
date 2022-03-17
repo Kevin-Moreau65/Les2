@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <span style={{ color: "#e3061e" }}>Les2!</span>
+          Welcome to <span style={{ color: "var(--accent-color)" }}>Les2!</span>
         </h1>
         <div className={styles.grid}>
           <Villa name='Villa "Stark"' prix={10_000_000} adresse="Malibu, California" photo="https://i.pinimg.com/originals/f1/7a/09/f17a09db50bc69d3ae1708b1bf2ccb87.png" />

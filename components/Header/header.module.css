@@ -3,7 +3,7 @@
     height: 50px;
     position: sticky;
     top: 0;
-    background-color: rgb(70, 70, 70);
+    background-color: var(--secondary-color);
     color: white;
     display: flex;
     flex-direction: row;

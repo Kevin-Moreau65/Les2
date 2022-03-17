@@ -1,5 +1,7 @@
 html,
 body {
+  --secondary-color: rgb(70, 70, 70);
+  --accent-color: #e3061e;
   padding: 0;
   margin: 0;
   color: rgb(116, 116, 116);
