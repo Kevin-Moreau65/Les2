@@ -18,7 +18,7 @@ function Villa(props: Props) {
 
   return (
     <div className={styles.grid}>
-      <a href="https://nextjs.org/docs" className={styles.card}>
+      <a href={"/article"} className={styles.card}>
         <div className={stylesvilla.divImage}>
           <img className={styles.img} src={props.photo}></img>
         </div>
