@@ -1,0 +1,25 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 650px;
+}
+
+.main div {
+    border-radius: 12px;
+}
+
+.cams {
+    border: solid 1px black;
+    height: 90%;
+    width: 60%;
+}
+
+.chat {
+    border: solid 1px grey;
+    height: 90%;
+    width: 30%;
+    display: flex;
+}
