@@ -20,13 +20,9 @@ const Home: NextPage = () => {
           Welcome to <span style={{ color: "var(--accent-color)" }}>Les2!</span>
         </h1>
         <div className={styles.grid}>
-          <Villa name='Villa "Stark"' prix={10_000_000} adresse="Malibu, California" photo="https://i.pinimg.com/originals/f1/7a/09/f17a09db50bc69d3ae1708b1bf2ccb87.png" />
-          <Villa name='Villa "The One"' prix={1_500_000} adresse="Bel Air, Los Angeles" photo="https://4.bp.blogspot.com/-B6ruhrpXKbc/XxnadnE49qI/AAAAAAAB-FY/X_oEH6JHPb0M0TFnqK2WIizR0KvrHCsWwCLcBGAsYHQ/s1600-rw/23%2BPhotos%2Bvs.%2B%2524500%252C000%252C000%2B%2BBel%2BAir%2BMega%2BMansion%2B%2BLos%2BAngeles%2B-%2BLuxury%2BHome%2B%2526%2BInterior%2BDesign%2BTour%2B%25281%2529.PNG" />
-          <Villa name='Villa "Navarre"' prix={1_000_000} adresse="Pau, France" photo="https://media.abcsalles.com/images/1/salles/1440x960/508567/villa-navarre-7.jpg" />
-          {/* <Villa name="villa10"/>
-          <Villa name="villa10"/>
-          <Villa name="villa10"/>
-          <Villa name="villa10"/> */}
+          <Villa id={1} name='Villa "Stark"' prix={10_000_000} adresse="Malibu, California" photo="https://i.pinimg.com/originals/f1/7a/09/f17a09db50bc69d3ae1708b1bf2ccb87.png" />
+          <Villa id={2} name='Villa "The One"' prix={1_500_000} adresse="Bel Air, Los Angeles" photo="https://4.bp.blogspot.com/-B6ruhrpXKbc/XxnadnE49qI/AAAAAAAB-FY/X_oEH6JHPb0M0TFnqK2WIizR0KvrHCsWwCLcBGAsYHQ/s1600-rw/23%2BPhotos%2Bvs.%2B%2524500%252C000%252C000%2B%2BBel%2BAir%2BMega%2BMansion%2B%2BLos%2BAngeles%2B-%2BLuxury%2BHome%2B%2526%2BInterior%2BDesign%2BTour%2B%25281%2529.PNG" />
+          <Villa id={3} name='Villa "Navarre"' prix={1_000_000} adresse="Pau, France" photo="https://media.abcsalles.com/images/1/salles/1440x960/508567/villa-navarre-7.jpg" />
         </div>
 
         <p className={styles.description}>

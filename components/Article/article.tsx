@@ -1,7 +1,7 @@
 import React from 'react';
 import internal from 'stream';
 import styles from '../../styles/Home.module.css';
-import stylesvilla from './villa.module.css';
+import stylesvilla from './article.module.css';
 
 
 
@@ -27,22 +27,7 @@ function Article(props: Props) {
       <div>
         <img className={styles.img} src={props.photo}></img>
       </div>
-    </div>
-      
-      
-      
-      
-      // <a>
-      //   <div className={stylesvilla.divImage}>
-      //     <img className={styles.img} src={props.photo}></img>
-      //   </div>
-      //   <div id={stylesvilla.divVilla}>
-      //     <h2 id={stylesvilla.Name}> {props.name}</h2>
-      //     <h2 id={stylesvilla.Prix}>{new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'USD' }).format(props.prix)}</h2>
-      //   </div>
-      //   <h2 id={stylesvilla.Adresse}>{props.adresse}</h2>
-      // </a>
-    
+    </div>    
   );
 }
 

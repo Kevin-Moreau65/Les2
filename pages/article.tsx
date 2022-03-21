@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Villa from '../components/Villa/villa'
-import Article from '../components/Villa/article'
+import Article from '../components/Article/article'
 
 const Home: NextPage = () => {
   return (
