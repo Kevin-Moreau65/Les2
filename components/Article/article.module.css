@@ -1,0 +1,8 @@
+.img {
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    transition: all 1s;
+    width:700px;
+    height: 480px;
+    margin-left: 100%;
+  }
