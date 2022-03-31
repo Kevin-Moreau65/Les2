@@ -1,0 +1,41 @@
+.img {
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    transition: all 1s;
+    width:700px;
+    height: 480px;
+    margin-left: 35%;
+  }
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.diveng {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: flex-start;
+  
+}
+
+#Name {
+  display: block;
+  margin-top: 70px;
+}
+
+#Prix {
+  display: block;
+  margin-top: 31px;
+}
+
+#Adresse {
+  display: block;
+  margin-top: 31px;
+}
