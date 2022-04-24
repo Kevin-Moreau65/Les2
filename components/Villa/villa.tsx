@@ -8,9 +8,9 @@ import stylesvilla from './villa.module.css';
 
 
 export interface Props {
-  id: number;
+  id: string;
   name: string;
-  prix: number;
+  prix: string;
   adresse: string;
   photo: string
 }
@@ -19,7 +19,7 @@ function Villa(props: Props) {
 
 
   return (
-    <div className={styles.grid}>      
+    <div className={styles.grid}>
       <Link href={`/article/${props.id}`} >
         <div className={styles.card}>
           <div className={stylesvilla.divImage}>
@@ -27,7 +27,7 @@ function Villa(props: Props) {
           </div>
           <div id={stylesvilla.divVilla}>
             <h2 id={stylesvilla.Name}> {props.name}</h2>
-            <h2 id={stylesvilla.Prix}>{new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'USD' }).format(props.prix)}</h2>
+            <h2 id={stylesvilla.Prix}>{props.prix}</h2>
           </div>
           <h2 id={stylesvilla.Adresse}>{props.adresse}</h2>
         </div>
