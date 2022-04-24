@@ -28,12 +28,6 @@ const Home: NextPage = () => {
           <Villa id={1} name='Villa "Stark"' prix={10_000_000} adresse="Malibu, California" photo="https://i.pinimg.com/originals/f1/7a/09/f17a09db50bc69d3ae1708b1bf2ccb87.png" />
           
         </div>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
         <div className={styles.grid}>
           {/* <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Villa 1 &rarr;</h2>
@@ -49,16 +43,6 @@ const Home: NextPage = () => {
             <h2>Villa 3 &rarr;</h2>
             <img className={styles.img} src="https://i.pinimg.com/originals/f1/7a/09/f17a09db50bc69d3ae1708b1bf2ccb87.png"></img>
           </a> */}
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
       </main>
 
