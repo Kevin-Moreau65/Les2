@@ -3,17 +3,33 @@ import styles from '../styles/Login.module.css'
 import Button from '../components/Button/button'
 import { useRouter } from 'next/router'
 function LoginPage() {
-    const [email, setEmail] = useState("")
+    const [pseudo, setPseudo] = useState("")
     const [password, setPassword] = useState("")
-    function handleEmail(e: React.FormEvent<HTMLInputElement>) {
-        setEmail(e.currentTarget.value)
+    function handlePseudo(e: React.FormEvent<HTMLInputElement>) {
+        setPseudo(e.currentTarget.value)
     }
     function handlePassword(e: React.FormEvent<HTMLInputElement>) {
         setPassword(e.currentTarget.value)
     }
-    function login() {
-        //Appelle API pour vérifier l'identité//
-        localStorage.setItem("token", "OK")
+    async function login() {
+        console.log(JSON.stringify({
+            username: pseudo,
+            pwd: password
+        }))
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        const res = await fetch('http://les2api.30d7d9e7b2014052a7b4.francecentral.aksapp.io/login', {
+            method: "POST",
+            headers: myHeaders,
+            body: JSON.stringify({
+                username: pseudo,
+                pwd: password
+            })
+        })
+        const data = await res.json()
+        console.log(data)
+        if (!data.token) return alert("pseudo ou mot de passe incorrect")
+        localStorage.setItem("token", data.token)
         router.push("/admin")
     }
     const router = useRouter()
@@ -21,8 +37,8 @@ function LoginPage() {
         <div className={styles.formulaire}>
             <h3>Se connecter</h3>
             <div className={styles.champs}>
-                <label htmlFor="username">Email</label>
-                <input type="text" name='email' placeholder='email' onChange={handleEmail} value={email} />
+                <label htmlFor="username">pseudo</label>
+                <input type="text" name='pseudo' placeholder='pseudo' onChange={handlePseudo} value={pseudo} />
             </div>
             <div className={styles.champs}>
                 <label htmlFor="password">Mot de passe</label>
